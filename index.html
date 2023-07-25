@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashback ou Milhas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div>
+     <h1>Cashback Ou Milhas?</h1>
+
+     <div class="left">
+     <h3 for="loja">Selecionne a loja: </h3>
+     <select id="loja">
+      <option value=""disabled selected></option>
+      <option id="Acer">Acer</option>
+      <option id="Adidas">Adidas</option>
+      <option id="Amazon">Amazon</option>
+      <option id="Americanas">Americanas</option>
+      <option id="Apple">Apple</option>
+      <option id="Araujo">Araujo</option>
+      <option id="Asus">Asus</option>
+      <option id="Avon">Avon</option>
+      <option id="Brastemp">Brastemp</option>
+      <option id="Carrefour">Carrefour</option>
+      <option id="Casas Bahia">Casas Bahia</option>
+      <option id="Centauro">Centauro</option>
+      <option id="Colombo">Colombo</option>
+      <option id="Consul">Consul</option>
+      <option id="Dafiti">Dafiti</option>
+      <option id="Decathlon">Decathlon</option>
+      <option id="Dell">Dell</option>
+      <option id="Drogaria São Paulo">Drogaria São Paulo    
+      </option>
+      <option id="Drogasil">Drogasil</option>
+      <option id="Droga Raia">Droga Raia</option>
+      <option id="Electrolux">Electrolux</option>
+      <option id="Enjoei">Enjoei</option>
+      <option id="Extra">Extra</option>
+      <option id="Fast Shop">Fast Shop</option>
+      <option id="Fnac">Fnac</option>
+      <option id="Girafa">Girafa</option>
+      <option id="HP">HP</option>
+      <option id="Huawei">Huawei</option>
+      <option id="Kalunga">Kalunga</option>
+      <option id="Kabum">Kabum</option>
+      <option id="LG">LG</option>
+      <option id="Lenovo">Lenovo</option>
+      <option id="Le Biscuit">Le Biscuit</option>
+      <option id="Magazine Luiza">Magazine Luiza</option>
+      <option id="Marisa">Marisa</option>
+      <option id="Mercado Livre">Mercado Livre</option>
+      <option id="Motorola">Motorola</option>
+      <option id="Natura">Natura</option>
+      <option id="Netshoes">Netshoes</option>
+      <option id="O Boticário">O Boticário</option>
+      <option id="Onofre">Onofre</option>
+      <option id="Pacheco">Pacheco</option>
+      <option id="Philips">Philips</option>
+      <option id="Ponto Frio">Ponto Frio</option>
+      <option id="Polishop">Polishop</option>
+      <option id="Positivo">Positivo</option>
+      <option id="Riachuelo">Riachuelo</option>
+      <option id="Samsung">Samsung</option>
+      <option id="Saraiva">Saraiva</option>
+      <option id="Shopee">Shopee</option>
+      <option id="Shein">Shein</option>
+      <option id="Sony">Sony</option>
+      <option id="Submarino">Submarino</option>
+      <option id="Tramontina">Tramontina</option>
+      <option id="Tricae">Tricae</option>
+      <option id="Ultrafarma">Ultrafarma</option>
+      <option id="Walmart">Walmart</option>
+      <option id="Xiaomi">Xiaomi</option>
+      <option id="Zattini">Zattini</option>
+     </select>
+     <br>
+     <br>
+  <label for="valor">Digite o valor do produto: </label><br><br>
+
+  <input type="text" id="valor" oninput="valorProduto()" disabled>
+  <br>
+
+  <h3 id="cupom">A loja possui cupom? </h3>
+
+  <input type="radio" id="option1" name="option" value="sim"><span class="color"> Sim </span> 
+
+  <input type="radio" id="option2" name="option" value="nao"><span class="color"> Não </span>
+  <br>
+
+  <p id="PorcOrValue"></p>
+
+  <select id="chooseValue" disabled onselect="escolhaValor()">
+    <option value="" disabled selected></option>
+    <option value="percent">Porcentagem</option>
+    <option value="real">Reais</option>
+  </select>
+
+
+
+  <p id="digitaCupom"></p>
+
+  <input type="text" id="cupomText" oninput="cupomValue()" disabled>
+
+  </div>
+
+  <div class="right">
+  <h3 id="pontuar">Você consegue pontuar na loja? </h3>
+  
+
+  <input type="radio" id="simPontos" name="optionPontos" value="sim"><span class="color"> Sim </span>
+
+  <input type="radio" id="naoPontos" name="optionPontos" value="nao"><span class="color"> Não </span>
+  <br>
+
+  <p id="digitaPontos"></p>
+
+  <input type="text" id="pontosText" oninput="pontosValue()" disabled>
+  <br><br>
+
+
+  <h3 id="cashback">Você ganha cashback na loja? </h3>
+  
+
+
+  <input type="radio" id="simCashback" name="optionCashback" value="sim"><span class="color"> Sim </span>
+
+  <input type="radio" id="naoCashback" name="optionCashback" value="nao" ><span class="color"> Não </span>
+  <br>
+
+  <p id="digitaCashback"></p>
+
+  <input type="text" id="cashbackText" oninput="cashbackValue()" disabled>
+  <br><br>
+  </div>
+
+
+
+  <button id="calcular" onclick="calcule()">Calcule</button>
+
+
+  <h3 id="custoProduto">O produto custa: </h3>
+
+  
+  
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>

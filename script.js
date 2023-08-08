@@ -93,7 +93,7 @@ function cupomInput(){
   function pontos(){
 
     if (simPontos.checked){
-      digitaPontos.innerHTML="Digite a quantidade de pontos por real gasto:<br>Ex: R$1,00 = 1Pt ";
+      digitaPontos.innerHTML="Digite a quantidade de pontos por real gasto:<br>Ex: A cada R$1,00 = 5Pts ";
       digitaPontos.style.display="block"
       pontosText.style.display="inline"
       pontosText.disabled=false;
